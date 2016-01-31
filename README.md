@@ -18,7 +18,7 @@ This is the directory where the data is saved in my computer, so please edit the
 
 D:/COURSERA/Cleaning Data/rworkdir/final/UCI HAR Dataset
 
-The script first reads the activity labels and features..
+# The script first reads the activity labels and features..
 
 activity_labels <- read.table("activity_labels.txt")
 features <- read.table("features.txt")
