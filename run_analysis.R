@@ -8,7 +8,7 @@
 # 6- Export the data to txt file. 
 
 # This is the directory where the data is saved.
-setwd("D:/COURSERA/Cleaning Data/rworkdir/final/UCI HAR Dataset")
+setwd("D:/COURSERA/Cleaning Data/rworkdir/UCI HAR Dataset")
 
 # Reading activity labels and features.
 activity_labels <- read.table("activity_labels.txt")
