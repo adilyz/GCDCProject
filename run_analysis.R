@@ -67,4 +67,4 @@ names(tidydata) <- gsub("\\.$","",names(tidydata))
 tidydata <- tidydata[,1:68]
 
 # export tidy data to tidydata.txt
-write.table(tidydata,"./tidydata.txt",sep = " ")
+write.table(tidydata,"./tidydata.txt",sep = " ",row.name=FALSE)
