@@ -1,5 +1,7 @@
 
-This is a project for summarizing Samsung's wearable computer testing data into a tidy data set. The actual data set is in below link and you can find all details in the zip file.
+# DETAILS OF FEATURES DERIVED FROM A COMPREHENSIVE DATASET 
+
+This is a project for summarizing Samsung's wearable computer testing data into a tidy data set. The actual data set is in below link and you can find all details in the zip file. At the bottom of this document you can find details about the original data set, as well. 
 
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
@@ -13,39 +15,135 @@ From the data set in step 4, creates a second, independent tidy data set with th
 
 The run_analysis.R script summarizes this data set in to a data set of the avarages of mean and standart deviation values. The output of the script is tidydata.txt. 
 
-Only the following mean and standart deviation variables are derived from the original data first grouping by the subject and activity(activiti), and calculating the avarages for each. 
+Only the following mean and standart deviation variables are derived from the original data first grouping by the subject and activity(activiti), and calculating the avarages for each. I also added more descriptive names to the variables.  
 
- [1] "subject"                                                      "activiti"                                                    
- [3] "tBodyAccelerometer.Mean.X"                                    "tBodyAccelerometer.Mean.Y"                                   
- [5] "tBodyAccelerometer.Mean.Z"                                    "tBodyAccelerometer.StandartDeviation.X"                      
- [7] "tBodyAccelerometer.StandartDeviation.Y"                       "tBodyAccelerometer.StandartDeviation.Z"                      
- [9] "tGravityAccelerometer.Mean.X"                                 "tGravityAccelerometer.Mean.Y"                                
-[11] "tGravityAccelerometer.Mean.Z"                                 "tGravityAccelerometer.StandartDeviation.X"                   
-[13] "tGravityAccelerometer.StandartDeviation.Y"                    "tGravityAccelerometer.StandartDeviation.Z"                   
-[15] "tBodyAccelerometerJerkSignals.Mean.X"                         "tBodyAccelerometerJerkSignals.Mean.Y"                        
-[17] "tBodyAccelerometerJerkSignals.Mean.Z"                         "tBodyAccelerometerJerkSignals.StandartDeviation.X"           
-[19] "tBodyAccelerometerJerkSignals.StandartDeviation.Y"            "tBodyAccelerometerJerkSignals.StandartDeviation.Z"           
-[21] "tBodyGyroscope.Mean.X"                                        "tBodyGyroscope.Mean.Y"                                       
-[23] "tBodyGyroscope.Mean.Z"                                        "tBodyGyroscope.StandartDeviation.X"                          
-[25] "tBodyGyroscope.StandartDeviation.Y"                           "tBodyGyroscope.StandartDeviation.Z"                          
-[27] "tBodyGyroscopeJerkSignals.Mean.X"                             "tBodyGyroscopeJerkSignals.Mean.Y"                            
-[29] "tBodyGyroscopeJerkSignals.Mean.Z"                             "tBodyGyroscopeJerkSignals.StandartDeviation.X"               
-[31] "tBodyGyroscopeJerkSignals.StandartDeviation.Y"                "tBodyGyroscopeJerkSignals.StandartDeviation.Z"               
-[33] "tBodyAccelerometerMagnitude.Mean"                             "tBodyAccelerometerMagnitude.StandartDeviation"               
-[35] "tGravityAccelerometerMagnitude.Mean"                          "tGravityAccelerometerMagnitude.StandartDeviation"            
-[37] "tBodyAccelerometerJerkSignalsMagnitude.Mean"                  "tBodyAccelerometerJerkSignalsMagnitude.StandartDeviation"    
-[39] "tBodyGyroscopeMagnitude.Mean"                                 "tBodyGyroscopeMagnitude.StandartDeviation"                   
-[41] "tBodyGyroscopeJerkSignalsMagnitude.Mean"                      "tBodyGyroscopeJerkSignalsMagnitude.StandartDeviation"        
-[43] "fBodyAccelerometer.Mean.X"                                    "fBodyAccelerometer.Mean.Y"                                   
-[45] "fBodyAccelerometer.Mean.Z"                                    "fBodyAccelerometer.StandartDeviation.X"                      
-[47] "fBodyAccelerometer.StandartDeviation.Y"                       "fBodyAccelerometer.StandartDeviation.Z"                      
-[49] "fBodyAccelerometerJerkSignals.Mean.X"                         "fBodyAccelerometerJerkSignals.Mean.Y"                        
-[51] "fBodyAccelerometerJerkSignals.Mean.Z"                         "fBodyAccelerometerJerkSignals.StandartDeviation.X"           
-[53] "fBodyAccelerometerJerkSignals.StandartDeviation.Y"            "fBodyAccelerometerJerkSignals.StandartDeviation.Z"           
-[55] "fBodyGyroscope.Mean.X"                                        "fBodyGyroscope.Mean.Y"                                       
-[57] "fBodyGyroscope.Mean.Z"                                        "fBodyGyroscope.StandartDeviation.X"                          
-[59] "fBodyGyroscope.StandartDeviation.Y"                           "fBodyGyroscope.StandartDeviation.Z"                          
-[61] "fBodyAccelerometerMagnitude.Mean"                             "fBodyAccelerometerMagnitude.StandartDeviation"               
-[63] "fBodyBodyAccelerometerJerkSignalsMagnitude.Mean"              "fBodyBodyAccelerometerJerkSignalsMagnitude.StandartDeviation"
-[65] "fBodyBodyGyroscopeMagnitude.Mean"                             "fBodyBodyGyroscopeMagnitude.StandartDeviation"               
-[67] "fBodyBodyGyroscopeJerkSignalsMagnitude.Mean"                  "fBodyBodyGyroscopeJerkSignalsMagnitude.StandartDeviation"   
+"subject"                                                      
+"tBodyAccelerometer.Mean.X"                                    
+"tBodyAccelerometer.Mean.Z"                                    
+"tBodyAccelerometer.StandartDeviation.Y"                       
+"tGravityAccelerometer.Mean.X"                                 
+"tGravityAccelerometer.Mean.Z"                                 
+"tGravityAccelerometer.StandartDeviation.Y"                    
+"tBodyAccelerometerJerkSignals.Mean.X"                         
+"tBodyAccelerometerJerkSignals.Mean.Z"                         
+"tBodyAccelerometerJerkSignals.StandartDeviation.Y"            
+"tBodyGyroscope.Mean.X"                                        
+"tBodyGyroscope.Mean.Z"                                        
+"tBodyGyroscope.StandartDeviation.Y"                           
+"tBodyGyroscopeJerkSignals.Mean.X"                             
+"tBodyGyroscopeJerkSignals.Mean.Z"                             
+"tBodyGyroscopeJerkSignals.StandartDeviation.Y"                
+"tBodyAccelerometerMagnitude.Mean"                             
+"tGravityAccelerometerMagnitude.Mean"                          
+"tBodyAccelerometerJerkSignalsMagnitude.Mean"                  
+"tBodyGyroscopeMagnitude.Mean"                                 
+"tBodyGyroscopeJerkSignalsMagnitude.Mean"                      
+"fBodyAccelerometer.Mean.X"                                    
+"fBodyAccelerometer.Mean.Z"                                    
+"fBodyAccelerometer.StandartDeviation.Y"                       
+"fBodyAccelerometerJerkSignals.Mean.X"                         
+"fBodyAccelerometerJerkSignals.Mean.Z"                         
+"fBodyAccelerometerJerkSignals.StandartDeviation.Y"            
+"fBodyGyroscope.Mean.X"                                        
+"fBodyGyroscope.Mean.Z"                                        
+"fBodyGyroscope.StandartDeviation.Y"                           
+"fBodyAccelerometerMagnitude.Mean"                             
+"fBodyBodyAccelerometerJerkSignalsMagnitude.Mean"              
+"fBodyBodyGyroscopeMagnitude.Mean"                             
+"fBodyBodyGyroscopeJerkSignalsMagnitude.Mean"                  
+"activiti"                                                    
+"tBodyAccelerometer.Mean.Y"                                   
+"tBodyAccelerometer.StandartDeviation.X"                      
+"tBodyAccelerometer.StandartDeviation.Z"                      
+"tGravityAccelerometer.Mean.Y"                                
+"tGravityAccelerometer.StandartDeviation.X"                   
+"tGravityAccelerometer.StandartDeviation.Z"                   
+"tBodyAccelerometerJerkSignals.Mean.Y"                        
+"tBodyAccelerometerJerkSignals.StandartDeviation.X"           
+"tBodyAccelerometerJerkSignals.StandartDeviation.Z"           
+"tBodyGyroscope.Mean.Y"                                       
+"tBodyGyroscope.StandartDeviation.X"                          
+"tBodyGyroscope.StandartDeviation.Z"                          
+"tBodyGyroscopeJerkSignals.Mean.Y"                            
+"tBodyGyroscopeJerkSignals.StandartDeviation.X"               
+"tBodyGyroscopeJerkSignals.StandartDeviation.Z"               
+"tBodyAccelerometerMagnitude.StandartDeviation"               
+"tGravityAccelerometerMagnitude.StandartDeviation"            
+"tBodyAccelerometerJerkSignalsMagnitude.StandartDeviation"    
+"tBodyGyroscopeMagnitude.StandartDeviation"                   
+"tBodyGyroscopeJerkSignalsMagnitude.StandartDeviation"        
+"fBodyAccelerometer.Mean.Y"                                   
+"fBodyAccelerometer.StandartDeviation.X"                      
+"fBodyAccelerometer.StandartDeviation.Z"                      
+"fBodyAccelerometerJerkSignals.Mean.Y"                        
+"fBodyAccelerometerJerkSignals.StandartDeviation.X"           
+"fBodyAccelerometerJerkSignals.StandartDeviation.Z"           
+"fBodyGyroscope.Mean.Y"                                       
+"fBodyGyroscope.StandartDeviation.X"                          
+"fBodyGyroscope.StandartDeviation.Z"                          
+"fBodyAccelerometerMagnitude.StandartDeviation"               
+"fBodyBodyAccelerometerJerkSignalsMagnitude.StandartDeviation"
+"fBodyBodyGyroscopeMagnitude.StandartDeviation"               
+"fBodyBodyGyroscopeJerkSignalsMagnitude.StandartDeviation"   
+
+# ALL FEATURES EXISTING IN THE ORIGINAL DATA SET
+
+Feature Selection 
+=================
+
+The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
+
+Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
+
+Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals). 
+
+These signals were used to estimate variables of the feature vector for each pattern:  
+'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+
+tBodyAcc-XYZ
+tGravityAcc-XYZ
+tBodyAccJerk-XYZ
+tBodyGyro-XYZ
+tBodyGyroJerk-XYZ
+tBodyAccMag
+tGravityAccMag
+tBodyAccJerkMag
+tBodyGyroMag
+tBodyGyroJerkMag
+fBodyAcc-XYZ
+fBodyAccJerk-XYZ
+fBodyGyro-XYZ
+fBodyAccMag
+fBodyAccJerkMag
+fBodyGyroMag
+fBodyGyroJerkMag
+
+The set of variables that were estimated from these signals are: 
+
+mean(): Mean value
+std(): Standard deviation
+mad(): Median absolute deviation 
+max(): Largest value in array
+min(): Smallest value in array
+sma(): Signal magnitude area
+energy(): Energy measure. Sum of the squares divided by the number of values. 
+iqr(): Interquartile range 
+entropy(): Signal entropy
+arCoeff(): Autorregresion coefficients with Burg order equal to 4
+correlation(): correlation coefficient between two signals
+maxInds(): index of the frequency component with largest magnitude
+meanFreq(): Weighted average of the frequency components to obtain a mean frequency
+skewness(): skewness of the frequency domain signal 
+kurtosis(): kurtosis of the frequency domain signal 
+bandsEnergy(): Energy of a frequency interval within the 64 bins of the FFT of each window.
+angle(): Angle between to vectors.
+
+Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable:
+
+gravityMean
+tBodyAccMean
+tBodyAccJerkMean
+tBodyGyroMean
+tBodyGyroJerkMean
+
+The complete list of variables of each feature vector is available in 'features.txt' in the zip file of original data. 
