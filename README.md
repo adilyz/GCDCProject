@@ -26,9 +26,13 @@ features <- read.table("features.txt")
 ... then reads test set... 
 
 X_test <- read.table("./test/X_test.txt",col.names = gsub("()","",features$V2))
+
 y_test <- read.table("./test/y_test.txt")
+
 subject_test <- read.table("./test/subject_test.txt")
+
 names(y_test) <- "activity"
+
 names(subject_test) <- "subject"
 
 ... then reads training set data... 
