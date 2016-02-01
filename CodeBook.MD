@@ -1,5 +1,5 @@
 
-# DETAILS OF FEATURES DERIVED FROM A COMPREHENSIVE DATASET 
+# DETAILS OF FEATURES DERIVED IN THE PROJECT
 
 This is a project for summarizing Samsung's wearable computer testing data into a tidy data set. The actual data set is in below link and you can find all details in the zip file. At the bottom of this document you can find details about the original data set, as well. 
 
