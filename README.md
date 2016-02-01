@@ -3,7 +3,7 @@
 Getting and Cleaning Data Course Project
 ----------------------------------------
 
-	In this course project we will summarize the data in the link below by filtering mean and standart deviation values and re-calculate their means by grouping the data according to the following instructions. 
+In this course project we will summarize the data in the link below by filtering mean and standart deviation values and re-calculate their means by grouping the data according to the following instructions. 
 
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
